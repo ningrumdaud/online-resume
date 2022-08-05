@@ -109,11 +109,12 @@
 }
 .container {
     display: flex;
-    width: 700px;
-    height: 80px;
+    width: 651px;
+    height: 70px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 .contact-button {
   flex: 1;

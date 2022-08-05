@@ -108,9 +108,12 @@
   }
 }
 .container {
-  display:flex;
-  width: 1140px;
-  height: 180px;
+    display: flex;
+    width: 700px;
+    height: 80px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .contact-button {
   flex: 1;

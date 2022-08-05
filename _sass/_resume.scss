@@ -107,15 +107,20 @@
     height: 28px;
   }
 }
-
+.container {
+  display:flex;
+  width: 1140px;
+  height: 180px;
+}
 .contact-button {
+  flex: 1;
   @include border-radius(3px);
   background-color: #efefef;
   text-decoration: none;
   text-align: center;
-  display: block;
+  display: inline-block;
   margin: 1.5rem auto;
-  width: 220px;
+  width: 155px;
   font-size: 1.375rem;
   @include sans_light;
   color: #333;

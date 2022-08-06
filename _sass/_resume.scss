@@ -123,9 +123,10 @@
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  margin: 1.5rem;
-  width: 160px;
-  font-size: 1.0rem;
+  margin: 0.5rem;
+  width: 125px;
+  font-size: 0.9rem;
+  font-weight: 500;
   @include sans_light;
   color: #333;
   line-height: 55px;

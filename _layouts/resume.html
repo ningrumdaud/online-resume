@@ -60,10 +60,30 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h3>Professional Experience</h3>
+          <h2>Professional Experience</h2>
         </header>
 
         {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+      
+      {% if site.resume_section_experience2 %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Academic Experience</h2>
+        </header>
+
+        {% for job in site.data.experience2 %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
@@ -80,7 +100,7 @@
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
-          <h3>Education</h3>
+          <h2>Education</h2>
         </header>
 
         {% for education in site.data.education %}
@@ -108,7 +128,7 @@
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h3>Projects</h3>
+          <h2>Projects</h2>
         </header>
 
         {% for project in site.data.projects %}
@@ -129,7 +149,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h3>Skills</h3>
+          <h2>Skills</h2>
         </header>
         {% for skill in site.data.skills %}
         <div class="resume-item">
@@ -147,7 +167,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h3>Awards & Recognition</h3>
+          <h2>Awards & Recognition</h2>
         </header>
 
         {% for recognition in site.data.recognitions %}
@@ -167,7 +187,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h3>Associations</h3>
+          <h2>Associations</h2>
         </header>
 
         {% for association in site.data.associations %}
@@ -187,7 +207,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h3>Outside Interests</h3>
+          <h2>Outside Interests</h2>
         </header>
 
         <div class="resume-item">
@@ -207,7 +227,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h3>Additional Links</h3>
+          <h2>Additional Links</h2>
         </header>
 
         <div class="resume-item">
@@ -227,7 +247,7 @@
       <section class="content-section print-only">
 
         <header class="section-header">
-          <h3>Social Links</h3>
+          <h2>Social Links</h2>
         </header>
 
         <div class="resume-item">

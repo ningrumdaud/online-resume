@@ -1,16 +1,13 @@
 # Skills
 # Data
 - skill: Data Processing & Analysis
-  description: 
-  * Python
-  * R
+  description: <i class="fa-brands fa-python"></i>
 
 # Data Visualization
 - skill: Data Visualization
   description: 
   - Tableau
   - Power BI
-  - 
 
 # Digital content development and creation
 - skill: Digital content development and creation

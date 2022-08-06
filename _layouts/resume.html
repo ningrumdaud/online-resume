@@ -73,6 +73,26 @@
       </section>
       <!-- end Experience -->
       {% endif %}
+      
+      {% if site.resume_section_interests %}
+      <!-- begin interests -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Academic Experience</h2>
+        </header>
+
+        {% for job in site.data.interest %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end interest -->
+      {% endif %}
 
 
       {% if site.resume_section_education %}
@@ -179,26 +199,6 @@
 
       </section>
       <!-- end Associations -->
-      {% endif %}
-
-     {% if site.resume_section_interest %}
-      <!-- begin interest -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Academic Experience</h2>
-        </header>
-
-        {% for job in site.data.interest %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end interest -->
       {% endif %}
       
 

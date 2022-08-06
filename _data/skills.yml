@@ -1,7 +1,7 @@
 # Skills
 # Data
 - skill: Data Processing & Analysis
-  description: <i class="fa-brands fa-python"></i>
+  description: <ul class="resume-item-list"><li>Python</li><li>R</li><li>SQL</li></ul>
 
 # Data Visualization
 - skill: Data Visualization

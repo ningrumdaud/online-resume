@@ -202,25 +202,33 @@
       <!-- end Associations -->
       {% endif %}
 
-      {% if site.resume_section_interests %}
-      <!-- begin Interests -->
+     {% if site.resume_section_interest %}
+      <!-- begin interest -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Outside Interests</h2>
+          <h2>Academic Experience</h2>
         </header>
 
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+        {% for job in site.data.interest %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
 
       </section>
-      <!-- end Interests -->
+      <!-- end interest -->
       {% endif %}
+      
+      {% if site.resume_section_experience2 %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Academic Experience</h2>
+        </header>
 
       {% if site.resume_section_links %}
       <!-- begin Links -->

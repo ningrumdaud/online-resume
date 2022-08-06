@@ -38,62 +38,15 @@
         <div class="executive-summary" itemprop="description">
           {{ site.resume_header_intro }}
         </div>
-        
-        <div class="container">
-          <div class="button-wrap">
-            <a href="cvsamples.pdf" class="contact-button no-print" itemprop="email">Download CV</a>
-            <a href="https://ningrumdaud.github.io/-prtfolio/" class="contact-button no-print" itemprop="email">Portfolio</a>
-            {% if site.resume_looking_for_work == 'yes' %}
-            <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-            {% elsif site.resume_looking_for_work == 'no' %}
-            <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-            {% else %}
-            {% endif %}
-          </div>
-        </div>
 
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
 
       </header>
-
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Professional Experience</h2>
-        </header>
-
-        {% for job in site.data.experience %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end Experience -->
-      {% endif %}
-      
-      {% if site.resume_section_interests %}
-      <!-- begin interests -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Academic Experience</h2>
-        </header>
-
-        {% for job in site.data.interest %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end interest -->
-      {% endif %}
-
 
       {% if site.resume_section_education %}
       <!-- begin Education -->
@@ -120,6 +73,47 @@
         {% endfor %}
       </section>
       <!-- end Education -->
+      {% endif %}
+      
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Professional Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+      
+      
+      {% if site.resume_section_interests %}
+      <!-- begin Interests -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Academic Experience</h2>
+        </header>
+
+        {% for job in site.data.interests %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
       {% endif %}
 
 
@@ -166,7 +160,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Awards & Recognition</h2>
+          <h2>Recognition</h2>
         </header>
 
         {% for recognition in site.data.recognitions %}
@@ -200,7 +194,27 @@
       </section>
       <!-- end Associations -->
       {% endif %}
-      
+
+
+      {% if site.resume_section_links %}
+      <!-- begin Links -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Additional Links</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for link in site.data.links %}
+            <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Links -->
+      {% endif %}
 
       {% if site.resume_print_social_links %}
       <!-- begin Print Social Links -->
@@ -219,7 +233,8 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Modified by <a href="https://twitter.com/ningrum_daud">@ningrum_daud</a> in 2022, from <a href="http://twitter.com/jglovier">@jglovier</a>'s template. </p>
+        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
+        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
       </footer>
 
     </div>

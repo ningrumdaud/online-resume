@@ -1,14 +1,22 @@
 # Skills
 # Data
-- skill: Data Processing & Analysis
-  description: <ul class="resume-item-list"><li>Python</li><li>R</li><li>SQL</li></ul>
+- skill: NLP tools & Programming Languages
+  description: <ul class="resume-item-list"><li>Python</li><li>R</li><li>Protege</li></ul>
 
 # Data Visualization
-- skill: Data Visualization
-  description: 
-  - Tableau
-  - Power BI
+- skill: Data Analytics & Data Visualization
+  description: <ul class="resume-item-list"><li>Tableau</li><li>Power BI</li></ul>
 
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+# Data Management
+- skill: Data Management
+  description: <ul class="resume-item-list"><li>SQL</li><li>AWS</li><li>SQL</li></ul>
+
+# Project Management & Documentation
+- skill: Project Management & Documentation
+  description: <ul class="resume-item-list"><li>Git</li><li>Notion</li><li>Asana</li></ul>
+
+# Writing & Reporting
+- skill: Writing & Reporting
+  description: <ul class="resume-item-list"><li>Microsoft Office</li><li>LaTeX</li><li>R Markdown</li></ul>
+
+

@@ -2,15 +2,15 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
+- project: Modelling Uncertainty in Science (InSciM), Funded by French ANR JCJC (ANR-21-CE38-0003-01)
+  role: Ph.D. Fellow
+  duration: 2022 &mdash; Present
   # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+  description: This project aims to study about uncertainty in science through ontological and linguistic modelling of this notion from datasets of articles in different disciplines. The objectives are to propose a linguistic model of the expression of uncertainty in scientific articles, in order to propose a tool to identify and classify these phenomena present in papers in different disciplines in Social Sciences and Humanities (SSH) and in Science, Technology, and Medicine (STM).
 
 # Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
+- project: Research collaboration project with Faculty of Law - University of Miskolc - Miskolci Egyetem, Hungary.
+  role: Researcher
+  duration: 20020 &mdash; 2021
   # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+  description: This project aims to study about Artificial Intelligence & Labour Law

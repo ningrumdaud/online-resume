@@ -9,11 +9,11 @@
 
 # Data Management
 - skill: Data Management
-  description: <ul class="resume-item-list"><li>SQL</li><li>AWS</li><li>SQL</li></ul>
+  description: <ul class="resume-item-list"><li>SQL</li><li>AWS</li></ul>
 
 # Project Management & Documentation
 - skill: Project Management & Documentation
-  description: <ul class="resume-item-list"><li>Git</li><li>Notion</li><li>Asana</li></ul>
+  description: <ul class="resume-item-list"><li>Git</li><li>Notion</li><li>Asana</li><li>Zotero</li></ul>
 
 # Writing & Reporting
 - skill: Writing & Reporting

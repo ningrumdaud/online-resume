@@ -5,11 +5,11 @@
 
 # Data Visualization
 - skill: Data Analytics & Data Visualization
-  description: <ul class="resume-item-list"><li>Tableau</li><li>Power BI</li></ul>
+  description: <ul class="resume-item-list"><li>Tableau</li></ul>
 
 # Data Management
 - skill: Data Management
-  description: <ul class="resume-item-list"><li>MySQL</li><li>AWS</li></ul>
+  description: <ul class="resume-item-list"><li>MySQL</li></ul>
 
 # Project Management & Documentation
 - skill: Project Management & Documentation

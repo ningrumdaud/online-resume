@@ -1,7 +1,7 @@
 # Professional Experience
 
 ## Platform Growth Analyst
-- company: Skilledd (Singapore)
+- company: GESIS - Leibniz Institute for the Social Science (Germany)
   position: Visiting Guest Researcher
   duration: Feb, 2023 &mdash; May, 2023
   summary: Developing an NLP-based interactive system for identifying scientific uncertainty in scholarly full text. The system employs a fine-grained annotation scheme and a weakly supervised technique, combining pattern matching, Regex, complex sentence checking, and authorial reference checking at the sentence level.

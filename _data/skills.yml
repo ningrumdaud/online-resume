@@ -1,11 +1,11 @@
 # Skills
 # Data
-- skill: Programming Languages & NLP tools
-  description: <ul class="resume-item-list"><li>Python</li><li>R</li><li>Protege</li></ul>
+- skill: Programming Languages, Data Analytics & NLP tools
+  description: <ul class="resume-item-list"><li>Python</li><li>R</li><li>Google Workspace</li><li>spaCy</li><li>Ollama</li><li>Hugging Face</li><li>PyTorch</li><li>Protege</li></ul>
 
 # Data Visualization
-- skill: Data Analytics & Data Visualization
-  description: <ul class="resume-item-list"><li>Tableau</li></ul>
+- skill: Dashboarding & Data Visualization
+  description: <ul class="resume-item-list"><li>Tableau</li><li>Streamlit</li><li>Gradio</li></ul>
 
 # Data Management
 - skill: Data Management

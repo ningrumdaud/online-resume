@@ -40,22 +40,22 @@
         </div>
 
         <div class="container">
-          <!-- Button Rows -->
-          <div class="button-row">
-            <a href="cvsamples.pdf" class="compact-button" download>Download CV</a>
-            <a href="https://ningrumdaud.github.io/publications/" class="compact-button">Publications</a>
-            <a href="https://ningrumdaud.github.io/portfolio/" class="compact-button">Project Portfolio</a>
-          </div>
-          
-          <div class="button-row">
-            <a href="teaching_portfolio.pdf" class="compact-button" download>Teaching Portfolio</a>
-            {% if site.resume_looking_for_work == 'yes' %}
-            <a href="mailto:{{ site.resume_contact_email }}" class="compact-button">Contact me</a>
-            {% elsif site.resume_looking_for_work == 'no' %}
-            <a class="compact-button not-looking">I'm not looking for work</a>
-            {% endif %}
+          <div class="button-wrap">
+            <!-- First Row -->
+            <div class="button-row">
+              <a href="cvsamples.pdf" class="contact-button no-print" itemprop="email">Download CV</a>
+              <a href="https://ningrumdaud.github.io/publications/" class="contact-button no-print" itemprop="email">Publications</a>
+              <a href="https://ningrumdaud.github.io/portfolio/" class="contact-button no-print" itemprop="email">Project Portfolio</a>
+            </div>
+        
+            <!-- Second Row -->
+            <div class="button-row">
+              <a href="teachingportfolio.pdf" class="contact-button no-print" itemprop="email">Teaching Portfolio</a>
+              <a href="mailto:your-email@example.com" class="contact-button no-print" itemprop="email">Contact Me</a>
+            </div>
           </div>
         </div>
+
 
       </header>
 

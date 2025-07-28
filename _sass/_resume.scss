@@ -123,13 +123,14 @@
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  margin: 0.5rem;
-  width: 125px;
-  font-size: 0.9rem;
+  margin: 0.3rem;         // Smaller margin
+  width: 100px;           // Reduced from 125px
+  font-size: 0.75rem;     // Smaller font
   font-weight: 500;
   @include sans_light;
   color: #333;
-  line-height: 55px;
+  padding: 8px 12px; // Top-bottom and left-right padding
+  line-height: normal;
   @include transition(all .2s ease);
 
   &:hover {
@@ -137,7 +138,16 @@
     color: #fff;
   }
 
-  &.not-looking { width: 400px; }
+  &.not-looking {
+    width: 250px;         // Reduce special case size too
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-button {
+    width: 100%;
+    font-size: 0.85rem;
+  }
 }
 
 // resume content styles
